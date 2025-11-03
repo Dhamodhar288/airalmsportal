@@ -1,0 +1,148 @@
+.video-page {
+  min-height: 100vh;
+  background-color: #f8fafc;
+  padding: 40px 5%;
+  text-align: center;
+}
+
+/* 🎥 Page Title */
+.video-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+/* 📘 Working Sheets Section */
+.workingSheets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.workingSheets .sheetLink {
+  text-decoration: none;
+}
+
+.workingSheets .workSheetHeading {
+  font-size: 14px;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 4px 14px;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.workingSheets .workSheetHeading:hover {
+  color: white;
+  background-color: red;
+  border-color: red;
+}
+
+/* 🎬 Video Grid Layout */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* 📦 Individual Video Card */
+.video-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 10px;
+  width: 100%;
+  max-width: 280px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* 🎥 Embedded Video (Reduced Height) */
+.video-container {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #000;
+}
+
+.video-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* 🧠 Text Styling */
+.video-heading {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #222;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.video-description {
+  color: #555;
+  margin-top: 4px;
+  font-size: 0.8rem;
+  line-height: 1.3;
+  font-family: "Poppins", sans-serif;
+}
+
+.workingSheets .videostohome .vdtohm {
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 3px 10px;
+}
+
+.workingSheets .videostohome a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 768px) {
+  .video-title {
+    font-size: 1.5rem;
+  }
+
+  .video-card {
+    max-width: 250px;
+    padding: 8px;
+  }
+
+  .video-heading {
+    font-size: 0.9rem;
+  }
+
+  .video-description {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-title {
+    font-size: 1.3rem;
+  }
+
+  .video-card {
+    max-width: 230px;
+  }
+
+  .video-heading {
+    font-size: 0.85rem;
+  }
+}
